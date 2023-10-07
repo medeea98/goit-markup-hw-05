@@ -14,6 +14,7 @@
     --background-wheat: #F5F4FA;
     --bottom-border-header: #ececec;
     --logo-color: #AFB1B8;
+    
 }
 
 body {
@@ -409,6 +410,28 @@ main {
     color: var(--main-black);
     margin-bottom: 50px;
 }
+.what-we-do-card{
+    width: 370px;
+    height: 70px;
+    background: rgba(47, 48, 58, 0.80); 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top:1435px;
+    
+}
+.what-we-do-card h4{
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-align: center;
+    color: #FFF;
+
+}
+
 /* OUR TEAM SECTION */
 
 .our-team-section {
@@ -787,7 +810,48 @@ color: #FFF;
     flex-direction: column;
     align-items: center;
     padding: 20px 24px 20px 24px;
+    
 }
+.box {
+    position: relative;
+    width: 370px;
+    height: 294px;
+    margin: 0 auto;
+    background-color: #bdbdbd;
+    overflow: hidden;
+    top: 0px;
+    
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 370px;
+    height: 294px;
+    background-color: var(--main-blue);
+    transform: translatey(100%);
+    transition: transform 250ms ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 63px 24px 91px 24px;
+  }
+  
+  .box:hover .overlay {
+    transform: translatey(0);
+  }
+  
+  .overlay p {
+    color: #fff;
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0.03em;
+    text-align: left;
+    
+  }
 .project {
 
     font-size: 18px;
@@ -818,6 +882,9 @@ color: #FFF;
     top: 0;
     left: 0;
     right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background: #00000033;
     z-index: 3;
 
@@ -828,10 +895,9 @@ color: #FFF;
 .modal-content {
     display: flex;
     justify-content: center;
-    margin: 221px 536px 222px 536px;
     align-items: center;
-    width: 30%;
-    height: 70%;
+    width: 328px;
+    height: 381px;
     background-color: #FFF;
     border: 1px solid #0000001A;
     border-radius: 4px;
@@ -843,4 +909,10 @@ color: #FFF;
     background-color: #FFF;
     cursor: pointer;
     position: relative;
+    top: -170px;
+    left: 140px;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.10);;
+    flex-shrink: 0;
 }
+
