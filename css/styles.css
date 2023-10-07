@@ -156,6 +156,9 @@ main {
 
 .current {
     color: var(--main-blue);
+    padding-bottom: 30px;
+    border-bottom: 5px solid var(--main-blue);
+    border-radius: 4px;
 }
 
 
@@ -178,6 +181,7 @@ main {
     font-weight: 500;
     line-height: normal;
     letter-spacing: 0.28px;
+
 }
 
 .global-header .contact-info {
@@ -839,6 +843,9 @@ color: #FFF;
   }
   
   .box:hover .overlay {
+    transform: translatey(0);
+  }
+  .box:focus .overlay {
     transform: translatey(0);
   }
   
