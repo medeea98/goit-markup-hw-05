@@ -14,6 +14,7 @@
     --background-wheat: #F5F4FA;
     --bottom-border-header: #ececec;
     --logo-color: #AFB1B8;
+    --transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
     
 }
 
@@ -72,7 +73,9 @@ a:active {
     color: var(--main-blue);
 }
 
-
+button {
+    transition: background-color var(--transition), color var(--transition), border var(--transition), box-shadow var(--transition);
+}
 button:hover {
     background-color: var(--main-blue);
     color: #FFF;
@@ -126,6 +129,9 @@ main {
     justify-content: center;
     align-items: center;
 }
+.container-header a{
+    transition: color var(--transition);
+}
 
 
 .logo-header {
@@ -168,6 +174,7 @@ main {
     align-items: center;
     justify-content: space-between;
     width: 259px;
+   
     
 }
 
@@ -181,6 +188,7 @@ main {
     font-weight: 500;
     line-height: normal;
     letter-spacing: 0.28px;
+    
 
 }
 
@@ -580,6 +588,7 @@ main {
 
 .container-icons-regular-customers  .icon {
     fill: var(--logo-color);
+    transition: background-color var(--transition), fill var(--transition), border var(--transition);
       
 }
 
@@ -619,6 +628,9 @@ main {
     flex-direction: row;
     align-items: baseline;
     overflow: hidden;
+}
+.container-footer a{
+    transition: color var(--transition);
 }
 
 .logo-footer {
@@ -703,14 +715,23 @@ color: #FFF;
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
+    
+}
+ellipse {
+    transition: background-color var(--transition), fill var(--transition);
+}
+.icon {
+    transition: background-color var(--transition), fill var(--transition);
 }
 
 .container-footer-icons ellipse:hover {
       fill: var(--main-blue);
       cursor: pointer;
+      
 }
 .container-footer-icons ellipse:focus {
     fill: var(--main-blue);
+    
 }
 /* PORTOFOLIO*/
 
@@ -734,7 +755,7 @@ color: #FFF;
     color: var(--main-black);
     border: none;
     display: flex;
-    gap: 30px;
+    gap: 8px;
     
 }
 .filter-buttons .regular-button {
@@ -790,6 +811,7 @@ color: #FFF;
     padding: auto;
     margin-left: -30px;
     margin-top: -50px;
+    transition: background-color var(--transition), border var(--transition), box-shadow var(--transition);
 }
 .results-items img {
     max-width: 370px;
@@ -800,6 +822,7 @@ color: #FFF;
     margin-top: 50px;
     flex-basis: calc((100% - 90px) / 3);
     max-width: 370px;
+    transition: background-color var(--transition), box-shadow var(--transition);
 }
 .results-items li:hover {
     cursor: pointer;
@@ -812,7 +835,7 @@ color: #FFF;
 .results-down-card {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     padding: 20px 24px 20px 24px;
     
 }
@@ -903,8 +926,8 @@ color: #FFF;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 328px;
-    height: 381px;
+    width: 428px;
+    height: 481px;
     background-color: #FFF;
     border: 1px solid #0000001A;
     border-radius: 4px;
@@ -916,10 +939,11 @@ color: #FFF;
     background-color: #FFF;
     cursor: pointer;
     position: relative;
-    top: -170px;
-    left: 140px;
+    top: -220px;
+    left: 180px;
     border-radius: 50%;
     border: 1px solid rgba(0, 0, 0, 0.10);;
     flex-shrink: 0;
+    
 }
 
