@@ -837,7 +837,8 @@ ellipse {
     flex-direction: column;
     align-items: flex-start;
     padding: 20px 24px 20px 24px;
-    
+    position: relative;
+    z-index: 2;
 }
 .box {
     position: relative;
@@ -870,6 +871,9 @@ ellipse {
   }
   .box:focus .overlay {
     transform: translatey(0);
+  }
+  .results-card:hover .overlay {
+    transform: translate(0);
   }
   
   .overlay p {
