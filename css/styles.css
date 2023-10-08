@@ -932,6 +932,18 @@ ellipse {
     border: 1px solid #0000001A;
     border-radius: 4px;
     box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+    animation: changeColor 4s linear 100ms infinite alternate both;
+}
+@keyframes changeColor {
+    0% {
+        background-color: var(--logo-color);
+    }
+    50% {
+        background-color: var(--background-wheat);
+    }
+    100% {
+        background-color: #FFF;
+    }
 }
 .close-btn {
     width: 30px;
