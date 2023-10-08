@@ -925,6 +925,7 @@ ellipse {
 }
 .is-hidden {
     visibility: hidden;
+    opacity: 0;
 }
 .modal-content {
     display: flex;
@@ -936,9 +937,10 @@ ellipse {
     border: 1px solid #0000001A;
     border-radius: 4px;
     box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
-    animation: changeColor 4s linear 100ms infinite alternate both;
+    /*animation: changeColor 4s linear 100ms infinite alternate both;*/
+    animation: animatescale 3000ms 1 1000ms;
 }
-@keyframes changeColor {
+/*@keyframes changeColor {
     0% {
         background-color: var(--logo-color);
     }
@@ -947,6 +949,19 @@ ellipse {
     }
     100% {
         background-color: #FFF;
+    }
+}*/
+
+@keyframes animatescale {
+    0% {
+      transform: scale(1);
+    }
+  50%{
+    transform: scale(0.75);
+  }
+  
+    100% {
+      transform: scale(1);
     }
 }
 .close-btn {
@@ -963,3 +978,15 @@ ellipse {
     
 }
 
+.modal.is-active .modal-content  {
+    animation: scaleDown 0.3s ease-in-out;
+}
+
+@keyframes scaleDown {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(0);
+    }
+}
