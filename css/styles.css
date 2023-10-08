@@ -978,7 +978,7 @@ ellipse {
     
 }
 
-.modal.is-active .modal-content  {
+/*.modal.is-active .modal-content  {
     animation: scaleDown 0.3s ease-in-out;
 }
 
@@ -989,4 +989,4 @@ ellipse {
     100% {
         transform: scale(0);
     }
-}
+}*/
