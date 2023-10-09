@@ -519,31 +519,28 @@ main {
 .container-icons-inferior-card{
     display: flex;
     margin-top: 16px;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
 }   
-.elipse-group ellipse {
-     fill: white;
-     width: 44px;
-     height: 44px
-}
-.elipse-group ellipse:hover {
-   fill: var(--main-blue);
-   cursor: pointer;
-}
-.elipse-group:hover .icon{
-    fill: #fff; 
+
+
+.container-icons-inferior-card {
+    fill: var(--logo-color);
+    margin-bottom: 30px;
 }
 
-.elipse-group ellipse:focus {
-    fill: var(--main-blue);
- }
- .elipse-group:focus .icon {
-     fill: #fff;
- }
-
-.container-icons-inferior-card .icon{
-    fill: #afb1b8;
+.icon-background {
+    padding: 10px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-    
+.icon-background:hover {
+    background-color: var(--main-blue);
+    fill: #FFF;
+}
 
 /* REGULAR CUSTOMERS*/
 .regular-customers {
