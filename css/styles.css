@@ -919,7 +919,7 @@ ellipse {
     align-items: center;
     background: #00000033;
     z-index: 3;
-
+    transition: opacity 2s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 .is-hidden {
     visibility: hidden;
@@ -936,8 +936,9 @@ ellipse {
     border-radius: 4px;
     box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
     /*animation: changeColor 4s linear 100ms infinite alternate both;*/
-    animation: animatescale 3000ms 1 1000ms;
+    /*animation: animatescale 3000ms 1 1000ms;*/
 }
+
 /*@keyframes changeColor {
     0% {
         background-color: var(--logo-color);
@@ -950,7 +951,7 @@ ellipse {
     }
 }*/
 
-@keyframes animatescale {
+/*@keyframes animatescale {
     0% {
       transform: scale(1);
     }
@@ -961,7 +962,7 @@ ellipse {
     100% {
       transform: scale(1);
     }
-}
+}*/
 .close-btn {
     width: 30px;
     height: 30px;
