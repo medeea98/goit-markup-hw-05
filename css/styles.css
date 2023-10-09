@@ -207,7 +207,7 @@ main {
 .contact-info-container .icon {
     cursor: pointer;
     margin-right: 7px;
-    fill: var(--main-grey);
+    
     position: relative;
     margin-top: 2px;
 }
@@ -225,12 +225,13 @@ main {
     line-height: 1.17;
     letter-spacing: 0.28px;
     margin-right: 20px;
-  
+    fill: var(--main-grey);
 }
 
 
 .contact-info:hover {
     color: var(--main-blue);
+    fill: var(--main-blue);
 }
 
 .contact-info:focus {
